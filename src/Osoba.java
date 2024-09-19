@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-public class Osoba {
+public abstract class Osoba {
+    /*
+    Z klasy bastrakcyjnej nie można zrobić obiektu, służy do dziedziczenia
+     */
     private String imie;
     private String nazwisko;
     private int wiek;
