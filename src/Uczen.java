@@ -1,5 +1,5 @@
 public class Uczen extends Osoba {
-
+//dziedziczenie dziedziczyny wszystko publiczne i chronione
     private int nrEwidencyjny;
     public static int liczbaUczniow = 0;
 
@@ -7,6 +7,15 @@ public class Uczen extends Osoba {
         super(imie, nazwisko);
         liczbaUczniow++;
         nrEwidencyjny = liczbaUczniow;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Uczen: " +
+                "imie:"+getImie()+
+                "nazwisko:"+getNazwisko()+
+                "nrEwidencyjny=" + nrEwidencyjny;
 
     }
 }
